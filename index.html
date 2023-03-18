@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shiksha EdTech Pvt. Ltd.</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="shiksha.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="logo.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-window-close" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>World's Biggest EdTech Company</h1>
+        <p>
+          Shiksha is a technology-based organization that provides educational
+          products, services,<br />
+          and solutions to enhance and support teaching and learning.<br />
+          The goal of EdTech companies is to improve the quality and
+          accessibility of education for students of all ages and levels,<br />
+          using innovative and cutting-edge technologies.
+        </p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+      </div>
+    </section>
+
+    <!-- About -->
+
+    <section class="about">
+      <h1>About Us</h1>
+      <p>
+        Shiksha offers a variety of products and services, such as online
+        courses, digital textbooks, educational games and simulations, learning
+        management systems (LMS), virtual and augmented reality tools, and more.
+        These technologies allow for personalized and adaptive learning
+        experiences, as well as real-time feedback and analytics to track
+        student progress.
+      </p>
+
+      <div class="row">
+        <div class="about-column">
+          <h3>Intermediate</h3>
+          <p>
+            Shiksha provides college readiness tools that help intermediate
+            students prepare for college. These tools can include college
+            counseling services, test preparation courses, and college
+            application support.
+          </p>
+        </div>
+        <div class="about-column">
+          <h3>Degree</h3>
+          <p>
+            Shiksha use artificial intelligence (AI) and machine learning
+            algorithms to personalize learning for each student. These
+            algorithms analyze student performance and adapt the learning
+            experience to meet each student's unique needs and learning style.
+          </p>
+        </div>
+        <div class="about-column">
+          <h3>Post Graduation</h3>
+          <p>
+            Shiksha offers practice exercises and assessments to help
+            intermediate students reinforce their understanding of concepts and
+            identify areas where they need further review. These assessments can
+            be used by teachers to track student progress and adjust their
+            instruction accordingly.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+
+    <section class="services">
+      <h1>Our Services</h1>
+      <p>
+        Shiksha is driven by a mission to make education more engaging,
+        effective, and accessible for everyone. <br />
+        We play a crucial role in shaping the future of education and empowering
+        learners to reach their full potential.
+      </p>
+
+      <div class="row">
+        <div class="services-col">
+          <img src="library.png" alt="liberary" />
+          <h3>Virtual and Augmented Reality Tools</h3>
+          <p>
+            Virtual and augmented reality tools provide an immersive learning
+            experience that enables students to explore complex concepts and
+            ideas in a more engaging way. These tools can be used to simulate
+            real-life scenarios and create interactive learning environments.
+          </p>
+        </div>
+        <div class="services-col">
+          <img src="classroom.jpg" alt="liberary" />
+          <h3>Educational Games and Simulations</h3>
+          <p>
+            Shiksha creates games and simulations that provide an interactive
+            and engaging learning experience. These games and simulations are
+            designed to help students develop critical thinking and
+            problem-solving skills.
+          </p>
+        </div>
+        <div class="services-col">
+          <img src="lms.jpg" alt="liberary" />
+          <h3>Learning Management Systems (LMS)</h3>
+          <p>
+            An LMS is a software platform that enables teachers to create,
+            manage, and deliver educational content to students. LMSs allow
+            teachers to create and deliver online courses, track student
+            progress, and provide feedback.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+
+    <section class="cta">
+      <h1>
+        Enroll for our various online courses! <br />Anywhere from the world.
+      </h1>
+      <a href = "mailto: abc@example.com" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+      <h4>Shiksha EdTech Pvt. Ltd.</h4>
+      <p>
+        Shiksha has revolutionized the education industry by providing learners
+        <br />
+        with flexible, accessible, and affordable learning solutions.
+      </p>
+      <div class="icons">
+        <a href="#"> <i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"> <i class="fab fa-linkedin"></i></a>
+        <a href="#">
+          <i class="fab fa-twitter"> </i>
+        </a>
+      </div>
+      <p>Made with <i class="fa fa-heart"></i> by Deepali</p>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
